@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Flappy Bird</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="shell" aria-label="Flappy Bird arcade game">
+      <section class="game-wrap">
+        <canvas id="game" width="432" height="768" aria-label="Game canvas"></canvas>
+
+        <div class="hud" aria-hidden="true">
+          <div class="score-card">
+            <span>Score</span>
+            <strong id="score">0</strong>
+          </div>
+          <div class="score-card">
+            <span>Best</span>
+            <strong id="best">0</strong>
+          </div>
+        </div>
+
+        <div class="overlay" id="overlay">
+          <div class="panel">
+            <h1>Flappy Bird</h1>
+            <p id="message">Tap, click, or press Space to flap.</p>
+            <button id="start" type="button">Start</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="controls" aria-label="Game controls">
+        <button id="mute" type="button" aria-pressed="false">Sound On</button>
+        <button id="restart" type="button">Restart</button>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
